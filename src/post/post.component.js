@@ -3,5 +3,6 @@ angular.module("meanreddit").component("post", {
         postid: "@"
     },
     controller: "postCtrl",
-    templateUrl: "/templates/post.html"
+    templateUrl: "/templates/post.html",
+    transclude: true
 });

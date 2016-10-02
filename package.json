@@ -1,0 +1,33 @@
+{
+    "name": "mean-reddit",
+    "version": "1.0.0",
+    "description": "Reddit-like MEAN App",
+    "main": "app.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "start": "gulp serve"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/CaldwellYSR/mean-reddit.git"
+    },
+    "author": "Matthew Caldwell <caldwellysr@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/CaldwellYSR/mean-reddit/issues"
+    },
+    "homepage": "https://github.com/CaldwellYSR/mean-reddit#readme",
+    "devDependencies": {
+        "browser-sync": "^2.14.0",
+        "gulp-concat": "^2.6.0",
+        "gulp-ng-annotate": "^2.0.0",
+        "gulp-sass": "^2.3.2",
+        "gulp-sourcemaps": "^1.6.0",
+        "gulp-uglify": "^2.0.0"
+    },
+    "dependencies": {
+        "angular": "^1.5.8"
+    }
+}

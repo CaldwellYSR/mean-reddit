@@ -1,6 +1,11 @@
-<div class="post">
-    <div class="voting">
-    </div>
-    <h3>{{ $ctrl.post.title }} -- {{ $ctrl.post.id }}</h3>
-    <p>{{ $ctrl.post.content }}</p>
+<article class="post">
+    <aside class="voting">
+        <button class="flipped" ng-click="$ctrl.upvote()">V</button>
+        {{ $ctrl.post.upvotes }}
+        <button ng-click="$ctrl.downvote()">V</button>
+    </aside>
+    <section class="content">
+        <h3>{{ $ctrl.post.title }}</h3>
+        <p>{{ $ctrl.post.content }}</p>
+    </section>
 </div>

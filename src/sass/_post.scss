@@ -1,0 +1,30 @@
+.post {
+    .voting {
+        color: grey;
+        display: inline-block;
+        margin: 0 1rem 0;
+        max-width: 100px;
+        text-align: center;
+        vertical-align: middle;
+        button {
+            background: transparent;
+            border: none;
+            color: grey;
+            display: block;
+            outline: none;
+            &.flipped {
+                @include transform(rotate(180deg));
+            }
+        }
+    }
+    .content {
+        border: 2px dashed grey;
+        border-width: 0 0 2px;
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(100% - 120px);
+    }
+    &:last-of-type .content {
+        border-width: 0;
+    }
+}
